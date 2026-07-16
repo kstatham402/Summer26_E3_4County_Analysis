@@ -1,0 +1,56 @@
+{
+  "input_folder": "/Users/ks/Desktop/Wu/Summer26/02_SOLA_2018_2025/LA_Tiffs",
+
+  "qc_masking": {
+    "qc_lookup_csv": "ECO-L2T-LSTE-002-QC-lookup.csv",
+    "require_produced_by_tes": true,
+    "acceptable_data_quality_flags": [
+      "Good quality L1B data"
+    ],
+    "acceptable_lst_accuracy_labels": [
+      "1 - 1.5 K (Good performance)",
+      "1.5 - 2 K (Marginal performance)"
+    ],
+    "mask_clouds": true,
+    "mask_water": true,
+    "cloud_flag_value": 0,
+    "water_flag_value": 0
+  },
+
+  "valid_pixel_filter": {
+    "min_valid_ratio": 0.50
+  },
+
+  "temporal_organization": {
+    "local_timezone": "America/Los_Angeles",
+    "merge_window_minutes": 2,
+    "season_months": {
+      "Winter (DJF)": [12, 1, 2],
+      "Spring (MAM)": [3, 4, 5],
+      "Summer (JJA)": [6, 7, 8],
+      "Fall (SON)": [9, 10, 11]
+    }
+  },
+
+  "grid_coverage": {
+    "study_region_shapefile": "Study_Region/LA/study_region.shp",
+    "existing_grid_shapefile": "/Users/ks/Desktop/Wu/Summer26/Testing/SoLA_70m_grid/SoLA_70m_grid.shp",
+    "grid_id_field": "GRID_ID",
+    "grid_cell_size_m": 70,
+    "clip_grid_to_boundary": true,
+    "coverage_threshold": 0.50
+  },
+
+  "processing": {
+    "merge_max_workers": 4,
+    "grid_coverage_max_workers": 8
+  },
+
+  "output": {
+    "root_dir": null,
+    "masked_tiff_dirname": "masked_tiff",
+    "merged_subdirname": "merged",
+    "grid_coverage_dirname": "grid_coverage",
+    "summary_dirname": "summary"
+  }
+}

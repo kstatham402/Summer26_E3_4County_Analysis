@@ -1,0 +1,9 @@
+"Model_Type","Response","R2_adj","Deviance_explained"
+"Global","Average",0.625672542368999,0.627573507070076
+"LCZ-Stratified (avg across classes)","Average",0.15210003170347,0.167460291513253
+"Global","Evening",0.65029290390641,0.651872059345282
+"LCZ-Stratified (avg across classes)","Evening",0.140366420654085,0.153182713845966
+"Global","Morning",0.429013474901943,0.43153959908486
+"LCZ-Stratified (avg across classes)","Morning",0.101303879892813,0.11845139000252
+"Global","Night",0.550723484236703,0.553373074943575
+"LCZ-Stratified (avg across classes)","Night",0.193016354918275,0.204639982986477

@@ -38,7 +38,7 @@
     "grid_id_field": "GRID_ID",
     "grid_cell_size_m": 70,
     "clip_grid_to_boundary": true,
-    "coverage_threshold": 0.50
+    "coverage_threshold": 0.60
   },
 
   "processing": {
